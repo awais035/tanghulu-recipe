@@ -3,6 +3,9 @@ import PostCard from '../../components/PostCard';
 import Link from 'next/link';
 import { getPostsByCategory, getCategoryBySlug, getAllCategories } from '../../lib/wordpress';
 
+// Edge Runtime for Cloudflare Pages
+export const runtime = 'edge';
+
 export default function CategoryPage({ category, posts, categories }) {
   if (!category) {
     return (

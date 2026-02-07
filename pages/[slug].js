@@ -4,6 +4,9 @@ import Link from 'next/link';
 import { getPostBySlug, getAllPostSlugs, getRelatedPosts, getPageBySlug, getAllPageSlugs } from '../lib/wordpress';
 import { formatDate, calculateReadingTime, generateExcerpt } from '../lib/utils';
 
+// Edge Runtime for Cloudflare Pages
+export const runtime = 'edge';
+
 export default function SingleContent({ post, relatedPosts, isPage }) {
   if (!post) {
     return (
