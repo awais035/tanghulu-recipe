@@ -1,0 +1,6 @@
+name = "tanghulu-recipe"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+WORDPRESS_API_URL = "https://cms.tanghulurecipe.com/graphql"
