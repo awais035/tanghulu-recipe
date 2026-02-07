@@ -5,7 +5,7 @@ import { getPostBySlug, getAllPostSlugs, getRelatedPosts, getPageBySlug, getAllP
 import { formatDate, calculateReadingTime, generateExcerpt } from '../lib/utils';
 
 // Edge Runtime for Cloudflare Pages
-export const runtime = 'edge';
+export const runtime = 'experimental-edge';
 
 export default function SingleContent({ post, relatedPosts, isPage }) {
   if (!post) {
